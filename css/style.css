@@ -9,6 +9,8 @@
   --bgcolor-main: #f5f5f5;
   --bgcolor-secondary: #2f303a;
   --bgcolor-team: #f5f4fa;
+  --outline-project: #eee;
+  --border-header: #ececec;
 }
 
 /* reset styles */
@@ -65,6 +67,12 @@ body {
   display: block;
 }
 /* -----Header ----*/
+.main-page .header {
+  border-bottom: 1px solid transparent;
+}
+.portfolio-page .header {
+  border-bottom: 1px solid var(--border-header);
+}
 .header-box {
   display: flex;
   align-items: center;
@@ -234,7 +242,16 @@ body {
 
 /*------ Main portfolio -------*/
 
+/* btn-box */
+.btn-box {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 50px;
+}
+
 .filters-btn {
+  padding: 6px 22px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -246,6 +263,24 @@ body {
 .filters-btn:focus {
   color: var(--primary-white-color);
   background-color: var(--btn-active);
+}
+/* Projects */
+.projects {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.project {
+  /* не зовсім зрозуміла умова B17 використання лише нижнього бордера */
+  box-shadow: 1px 0 var(--outline-project), -1px 0 var(--outline-project);
+  border-bottom: 1px solid var(--outline-project);
+}
+.project:not(:nth-child(-n + 3)) {
+  margin-top: 30px;
+}
+.project-text {
+  padding: 20px 24px;
 }
 
 .filters-header {
