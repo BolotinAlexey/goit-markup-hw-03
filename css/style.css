@@ -281,6 +281,10 @@ body {
 /* .project:not(:nth-child(-n + 3)) {
   margin-top: 30px;
 } */
+
+.project > img {
+  display: block;
+}
 .project-text {
   padding: 20px 24px;
 }
