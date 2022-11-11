@@ -266,19 +266,21 @@ body {
 }
 /* Projects */
 .projects {
+  margin-top: -30px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .project {
+  margin-top: 30px;
   /* не зовсім зрозуміла умова B17 використання лише нижнього бордера */
   box-shadow: 1px 0 var(--outline-project), -1px 0 var(--outline-project);
   border-bottom: 1px solid var(--outline-project);
 }
-.project:not(:nth-child(-n + 3)) {
+/* .project:not(:nth-child(-n + 3)) {
   margin-top: 30px;
-}
+} */
 .project-text {
   padding: 20px 24px;
 }
