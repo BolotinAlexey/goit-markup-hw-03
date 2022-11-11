@@ -1,4 +1,7 @@
 :root {
+  --padding-container: 15px;
+  --value-columns: 3;
+  --offset-projects: 30px;
   --main-color: #212121;
   --secondary-color: #757575;
   --head-color: #000;
@@ -36,8 +39,8 @@ body {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: var(--padding-container);
+  padding-right: var(--padding-container);
 }
 
 .section {
@@ -266,15 +269,20 @@ body {
 }
 /* Projects */
 .projects {
-  margin-top: -30px;
-  margin-left: -30px;
+  margin-top: calc(-1 * var(--offset-projects));
+  margin-left: calc(-1 * var(--offset-projects));
   display: flex;
   flex-wrap: wrap;
 }
 
 .project {
-  margin-top: 30px;
-  margin-left: 30px;
+  flex-basis: calc(
+    (100% - 2 * var(--padding-container) - var(--offset-projects) * (var(--value-columns) - 1)) /
+      var(--value-columns)
+  );
+  margin-top: var(--offset-projects);
+  margin-left: var(--offset-projects);
+
   /* не зовсім зрозуміла умова B17 використання лише нижнього бордера */
   box-shadow: 1px 0 var(--outline-project), -1px 0 var(--outline-project);
   border-bottom: 1px solid var(--outline-project);
