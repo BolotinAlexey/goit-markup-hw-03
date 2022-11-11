@@ -62,7 +62,7 @@
       <section class="section features">
         <div class="container">
           <h2 class="section-header display-none">Особливості</h2>
-          <ul class="list">
+          <ul class="list features-box">
             <li>
               <h3 class="feature-header">УВАГА ДО ДЕТАЛЕЙ</h3>
               <p class="feature-description">
@@ -98,15 +98,28 @@
       <section class="section doing">
         <div class="container">
           <h2 class="section-header">Чим ми займаємося</h2>
-          <ul class="list">
+          <ul class="list doing-box">
             <li>
-              <img src="./images/box1.jpg" alt="Програмування" width="370" height="294" />
-            </li>
-            <li>
-              <img src="./images/box2.jpg" alt="Адаптівний дізайн" width="370" height="294" />
+              <img
+                class="img-block"
+                src="./images/box1.jpg"
+                alt="Програмування"
+                width="370"
+                height="294"
+              />
             </li>
             <li>
               <img
+                class="img-block"
+                src="./images/box2.jpg"
+                alt="Адаптівний дізайн"
+                width="370"
+                height="294"
+              />
+            </li>
+            <li>
+              <img
+                class="img-block"
                 src="./images/box3.jpg"
                 alt="Підбір різноманітних палітри кольорів"
                 width="370"
@@ -121,31 +134,58 @@
       <section class="section team">
         <div class="container">
           <h2 class="section-header">Наша команда</h2>
-          <ul class="list">
-            <li>
-              <img src="./images/igor.jpg" alt="фото Ігоря Дем'яненко" width="270" height="260" />
-              <h3 class="team-header">Ігор Дем'яненко</h3>
-              <p class="team-description" lang="en">Product Designer</p>
-            </li>
-            <li>
-              <img src="./images/olga.jpg" alt="фото Ольгі Рєпіной" width="270" height="260" />
-              <h3 class="team-header">Ольга Рєпіна</h3>
-              <p class="team-description" lang="en">Frontend Developer</p>
-            </li>
-            <li>
-              <img src="./images/mykola.jpg" alt="фото Миколи Тарасова" width="270" height="260" />
-              <h3 class="team-header">Микола Тарасов</h3>
-              <p class="team-description" lang="en">Marketing</p>
-            </li>
-            <li>
+          <ul class="list team-box">
+            <li class="team-card">
               <img
+                class="img-block"
+                src="./images/igor.jpg"
+                alt="фото Ігоря Дем'яненко"
+                width="270"
+                height="260"
+              />
+              <div class="team-text">
+                <h3 class="team-header">Ігор Дем'яненко</h3>
+                <p class="team-description" lang="en">Product Designer</p>
+              </div>
+            </li>
+            <li class="team-card">
+              <img
+                class="img-block"
+                src="./images/olga.jpg"
+                alt="фото Ольгі Рєпіной"
+                width="270"
+                height="260"
+              />
+              <div class="team-text">
+                <h3 class="team-header">Ольга Рєпіна</h3>
+                <p class="team-description" lang="en">Frontend Developer</p>
+              </div>
+            </li>
+            <li class="team-card">
+              <img
+                class="img-block"
+                src="./images/mykola.jpg"
+                alt="фото Миколи Тарасова"
+                width="270"
+                height="260"
+              />
+              <div class="team-text">
+                <h3 class="team-header">Микола Тарасов</h3>
+                <p class="team-description" lang="en">Marketing</p>
+              </div>
+            </li>
+            <li class="team-card">
+              <img
+                class="img-block"
                 src="./images/mihailo.jpg"
                 alt="фото Михайло Єрмакова"
                 width="270"
                 height="260"
               />
-              <h3 class="team-header">Михайло Єрмаков</h3>
-              <p class="team-description" lang="en">UI Designer</p>
+              <div class="team-text">
+                <h3 class="team-header">Михайло Єрмаков</h3>
+                <p class="team-description" lang="en">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -154,11 +194,13 @@
 
     <!-- Footer -->
     <footer class="footer">
-      <div class="container">
-        <a class="link logo" href="/" lang="en">Web<span class="footer-studio">Studio</span></a>
+      <div class="container footer-box">
+        <a class="link logo" href="./index.html" lang="en"
+          >Web<span class="footer-studio">Studio</span></a
+        >
         <address class="address">
           м. Київ, пр-т Лесі Українки, 26
-          <ul class="contacts-nav list">
+          <ul class="list">
             <li>
               <a class="link address-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>

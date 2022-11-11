@@ -5,8 +5,10 @@
   --accent-color: #2196f3;
   --primary-white-color: #fff;
   --color-address-link: rgba(255, 255, 255, 0.6);
-  --bgcolor-secondary: #2f303a;
   --btn-active: #188ce8;
+  --bgcolor-main: #f5f5f5;
+  --bgcolor-secondary: #2f303a;
+  --bgcolor-team: #f5f4fa;
 }
 
 /* reset styles */
@@ -59,7 +61,9 @@ body {
   font-size: inherit;
   line-height: inherit;
 }
-
+.img-block {
+  display: block;
+}
 /* -----Header ----*/
 .header-box {
   display: flex;
@@ -74,11 +78,12 @@ body {
 
 /* logo */
 .logo {
-  margin-right: 93px;
   color: var(--accent-color);
   font: 700 26px/1.19 'Raleway', sans-serif;
 }
-
+.nav > .logo {
+  margin-right: 93px;
+}
 .header-studio {
   color: var(--head-color);
 }
@@ -97,7 +102,6 @@ body {
 .site-nav {
   display: flex;
 }
-
 /* site-nav links */
 .site-nav-link {
   color: var(--main-color);
@@ -130,6 +134,7 @@ body {
 /*------ Main studio------ */
 /* common styles */
 .section-header {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   /* 42/36=1.166.. */
@@ -171,7 +176,16 @@ body {
 }
 
 /* Features */
+.features,
+.doing {
+  background-color: var(--bgcolor-main);
+}
+.features-box {
+  display: flex;
+  gap: 30px;
+}
 .feature-header {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: inherit;
   line-height: inherit;
@@ -183,12 +197,32 @@ body {
 }
 
 /* Doing */
-
+.doing {
+  padding-top: 0;
+}
+.doing-box {
+  display: flex;
+  justify-content: space-between;
+}
 /* Team */
 .team {
   line-height: 1.18;
+  background-color: var(--bgcolor-team);
+}
+.team-box {
+  display: flex;
+  justify-content: space-between;
+}
+.team-card {
+  background-color: var(--primary-white-color);
+}
+.team-text {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
 }
 .team-header {
+  padding-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
 }
@@ -230,17 +264,24 @@ body {
 .footer {
   background-color: var(--bgcolor-secondary);
 }
+.footer-box {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 /* logo */
 .footer-studio {
   color: var(--primary-white-color);
 }
 /* address */
 .address {
+  margin-top: 20px;
   font-style: normal;
   line-height: 1.71;
   color: var(--primary-white-color);
 }
 
 .address-link {
+  display: block;
+  margin-top: 9px;
   color: var(--color-address-link);
 }
