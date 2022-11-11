@@ -86,6 +86,9 @@ body {
 /* common links */
 .site-nav-link,
 .contacts-nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   letter-spacing: 0.02em;
 }
@@ -135,10 +138,13 @@ body {
 }
 /* poster */
 .poster {
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color: var(--bgcolor-secondary);
   text-align: center;
 }
 .poster-header {
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -147,6 +153,9 @@ body {
 }
 
 .poster-btn {
+  padding: 10px 32px;
+  border-radius: 4px;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -155,6 +164,7 @@ body {
   letter-spacing: 0.06em;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .poster-btn:active {
   background-color: var(--btn-active);
