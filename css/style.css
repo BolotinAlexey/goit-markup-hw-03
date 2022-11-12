@@ -195,6 +195,9 @@ body {
   display: flex;
   gap: 30px;
 }
+.feature-item {
+  flex-basis: 270px;
+}
 .feature-header {
   margin-bottom: 10px;
   font-weight: 700;
@@ -312,11 +315,9 @@ body {
 }
 /*------ Footer -------*/
 .footer {
-  background-color: var(--bgcolor-secondary);
-}
-.footer-box {
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: var(--bgcolor-secondary);
 }
 /* logo */
 .footer-studio {
